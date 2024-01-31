@@ -1,0 +1,77 @@
+/* DESKTOP FIRST */
+
+/* BASE SETTINGS */
+
+:root {
+    --white: #fff;
+    --translucent-white: #d7ccc0;
+    --light: #f5f4f0;
+    --main-color: #fe8a02;
+    --main-dark: #42413c;
+    --dark: #2a2626;
+    --translucent-dark: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+    --main-font: "Open Sans";
+    --headers-font: "Neucha";
+    --regular-text: 16px;
+    --lineheight: 1.6em;
+    --headers-lineheight: 1.2em;
+}
+
+/*FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/OpenSans-Regular.ttf"); font-family: "Open Sans"; font-weight: normal; }
+@font-face { src: url("../fonts/OpenSans-Bold.ttf"); font-family: "Open Sans"; font-weight: bold; }
+@font-face { src: url("../fonts/Neucha-Regular.ttf"); font-family: "Neucha"; font-weight: normal; }
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: var(--regular-text);
+    line-height: var(--lineheight);
+    color: var(--dark);
+}
+
+ul, li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: var(--headers-font);
+    line-height: var(--headers-lineheight);
+}
+
+h2 {
+    font-size: 60px;
+    font-family: var(--headers-font);
+    line-height: var(--headers-lineheight);
+}
+
+h3 {
+    font-size: 34px;
+    font-family: var(--headers-font);
+    line-height: var(--headers-lineheight);
+}
+
+section {
+    max-width: 1110px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
