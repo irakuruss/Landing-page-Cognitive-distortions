@@ -26,6 +26,58 @@
 @font-face { src: url("../fonts/Neucha-Regular.ttf"); font-family: Neucha; font-weight: normal; }
 
 
+.accent {
+    color: var(--accent);
+}
+
+.dark-text {
+    color: var(--dark);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.brown-text {
+    color: var(--brown);
+}
+
+.translucent-white {
+    color: var(--translucent-white);
+}
+
+.translucent-dark {
+    color: var(--translucent-dark);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.bg-basic-dark {
+    background-color: var(--basic-dark);
+}
+
+.bg-brown {
+    background-color: var(--brown);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.pt17 {
+    padding-top: 17px;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -45,6 +97,11 @@ body {
     font-size: var(--regular-text);
     line-height: var(--lineheight);
     color: var(--dark);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container {
@@ -86,86 +143,12 @@ ul, li {
     color: var(--dark);
 }
 
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.section-header {
-    font-weight: 400;
-}
-
-.section-span {
-    font-size: 24px;
-    font-family: var(--headers-font), sans-serif;
-}
-
-.section-text {
-    padding-top: 30px;
-    font-size: 24px;
-    font-family: var(--headers-font);
-    font-weight: normal;
-}
-
-.section-footer {
-    padding-top: 100px;
-}
-
-.section-footer-header {
-    padding: 5px 0 5px 10px;
-    font-family: var(--main-font), sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.accent {
-    color: var(--accent);
-}
-
-.dark-text {
-    color: var(--dark);
-}
-
-.white-text {
-    color: var(--white);
-}
-
-.translucent-white {
-    color: var(--translucent-white);
-}
-
-.translucent-dark {
-    color: var(--translucent-dark);
-}
-
-.bg-light {
-    background-color: var(--light);
-}
-
-.bg-basic-dark {
-    background-color: var(--basic-dark);
-}
-
-.bg-brown {
-    background-color: var(--brown);
-}
-
-.d-flex {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.pt17 {
-    padding-top: 17px;
-}
-
 .img {
     vertical-align: middle;
     filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
+
+
 
 /* HEADER */
 
@@ -301,39 +284,52 @@ section {
     font-weight: bold;
 }
 
-/* IKEA EFFECTS */
+/* SECTION */
 
-.ikea-effect-top {
+.section {
+    font-family: var(--headers-font), sans-serif;
     gap: 30px;
+}
+
+.section-header {
+    font-weight: 400;
+}
+
+.section-span {
+    font-size: 24px;
     font-family: var(--headers-font), sans-serif;
 }
 
-.ikea-effect-bottom {
+.section-text {
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: var(--headers-font);
+    font-weight: normal;
+}
+
+.section-footer {
     padding-top: 100px;
 }
 
-.ikea-effect-bottom-header {
+.section-footer-header {
     padding: 5px 0 5px 10px;
     font-family: var(--main-font), sans-serif;
     font-weight: bold;
     font-size: 14px;
 }
 
-.ikea-effect-bottom-content {
-    gap: 30px;
-    font-family: var(--headers-font), sans-serif;
+.section-footer-text {
     font-family: var(--main-font), sans-serif;
-    line-height: 1.6;
-    display: flex;
+    line-height: var(--lineheight);
     flex-wrap: nowrap;
-    font-size: 16px;
-    padding-top: 17px;
+    gap: 30px;
 }
 
-.ikea-effect-bottom-content p {
+.section-footer-text p {
     width: 50%;
-    font-weight: bold;
 }
+
+
 
 /**/
 
