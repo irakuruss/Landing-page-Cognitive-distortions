@@ -302,9 +302,10 @@ ul, li {
 
 .section-text {
     padding-top: 30px;
-    font-size: 24px;
+    font-size: 34px;
     font-family: var(--headers-font);
     font-weight: normal;
+    line-height: var(--lineheight);
 }
 
 .section-footer {
