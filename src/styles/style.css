@@ -104,6 +104,11 @@ section {
     padding-bottom: 100px;
 }
 
+footer,
+.header {
+  padding: 100px 0;
+}
+
 .container {
     position: relative;
     width: 1110px;
@@ -113,6 +118,14 @@ section {
 
 ul, li {
     list-style: none;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .header-h1 {
@@ -330,9 +343,74 @@ ul, li {
     width: 50%;
 }
 
+/* FOOTER */
 
+.footer-wrap {
+    justify-content: space-between;
+    align-items: center;
+  }
 
-/**/
+.footer-offer {
+    padding: 55px 0 55px 55px;
+    font-family: var(--headers-font), sans-serif;
+    font-size: 34px;
+    line-height: var(--headers-lineheight);
+}
 
+.footer-form {
+    padding-right: 55px;
+}
 
+.footer-label {
+    display: block;
+}
 
+.btn-send {
+    width: 70px;
+    height: 50px;
+    background-color: var(--accent);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-send::before {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../images/send.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.input-btn {
+    padding-top: 9px;
+    align-items: center;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 415px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--basic-dark);
+    font-size: 13.1px;
+    opacity: 0.2;
+}
+
+.footer-span {
+    font-family: var(--main-font), sans-serif;
+    font-size: 12px;
+}
+
+.footer-contacts {
+    min-height: 104px;
+    margin-top: 76px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
